@@ -154,4 +154,36 @@ def test_hbarplot_of_iris_petal_length():
     plt.xlabel('Petal Length (cm)'); plt.ylabel('Species')
     ax.set_yticks([0.45, 1.45, 2.45])
     ax.set_yticklabels(['setosa', 'versicolor', 'viriginica'])
-  
+
+####
+Creating the Plot
+After completing function definitions in test_plots.py, click cd ~/ && python3 -m pytest ~/Matsession/tests/test_plots.py.
+
+The test run will create plots in the result_images/test_plots folder. These plots cannot be viewed directly.
+####
+
+####
+Viewing the Plot
+To view the plots after the test run, click python3 ~/manage.py runserver 0.0.0.0:8000. This starts a web server.
+
+To view the created plot corresponding to the first defined function, access the URL:
+
+https://2886795269-8000-host09-fresco.environments.katacoda.com/myplots/1/
+
+To view the plot corresponding to the second defined function, access the URL:
+https://2886795269-8000-host09-fresco.environments.katacoda.com/myplots/2/
+
+To view the plot corresponding to the third defined function, access the URL:
+https://2886795269-8000-host09-fresco.environments.katacoda.com/myplots/3/
+####
+
+####
+Submission
+Press Ctrl+C in the terminal to stop the web server.
+
+Ensure 3 tests are passed while testing. If any test fails, make necessary changes in the corresponding function, and redo all the steps.
+
+Once all 3 tests are passed, click the 'Summary' button.
+
+Note: If unable to submit, check if the images are created as expected under the path /home/scrapbook/tutorial/result_images/test_plots/
+####
