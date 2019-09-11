@@ -131,7 +131,7 @@ def test_barplot_of_iris_measurements():
     ax.bar(species_index1,sepal_len, color='c', width='0.2', edgecolor = 'black', label='Sepal Length')
     ax.bar(species_index2,sepal_wd, color='m', width='0.2', edgecolor = 'black', label='Sepal Width')
     ax.bar(species_index3,petal_len, color='y', width='0.2', edgecolor = 'black', label='Petal Length')
-    ax.bar(species_index4,petal_ed, color='orange', width='0.2', edgecolor = 'black', label='Petal Width')
+    ax.bar(species_index4,petal_wd, color='orange', width='0.2', edgecolor = 'black', label='Petal Width')
     plt.title('Mean Measurements of Iris Species')
     plt.xlabel('Species'); plt.ylabel('Iris Measurements (cm)')
     plt.xlim(0.5,3.7); plt.ylim(0,10)
