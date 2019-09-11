@@ -81,6 +81,8 @@ def test_generate_plot_with_style1():
         ax.set_xticks([1.1, 2.1, 3.1])
         ax.set_xticklabels(['setosa', 'versicolor', 'viriginica'])
         ax.legend()
+        plt.show()
+
 
 @image_comparison(baseline_images=['Plot_with_Style2'],extensions=['png'])
 def test_generate_plot_with_style2():
@@ -108,6 +110,7 @@ def test_generate_plot_with_style2():
         ax.set_xticks([1.1, 2.1, 3.1])
         ax.set_xticklabels(['setosa', 'versicolor', 'viriginica'])
         ax.legend()
+        plt.show()
 
 
 @image_comparison(baseline_images=['Plot_with_Style3'],extensions=['png'])
@@ -136,6 +139,8 @@ def test_generate_plot_with_style3():
         ax.set_xticks([1.1, 2.1, 3.1])
         ax.set_xticklabels(['setosa', 'versicolor', 'viriginica'])
         ax.legend()
+        plt.show()
+  
 
 ####
 Creating the Plot
