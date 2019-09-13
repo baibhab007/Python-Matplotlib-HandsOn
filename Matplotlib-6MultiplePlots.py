@@ -159,9 +159,9 @@ def test_generate_figure3():
     y3 = x**3
     fig = plt.figure(figsize=(8,6))
     g = gridspec.GridSpec(2,2)
-    axes1 = plt.subplot(g[1,1], title = 'y = x')
+    axes1 = plt.subplot(g[:,1], title = 'y = x')
     axes1.plot(x, y1)
-    axes2 = plt.subplot(g[2,1], title = 'y = x**2')
+    axes2 = plt.subplot(g[:,1], title = 'y = x**2')
     axes2.plot(x, y2)
     axes3 = plt.subplot(g[:2], title = 'y = x**3')
     axes3.plot(x, y3)
