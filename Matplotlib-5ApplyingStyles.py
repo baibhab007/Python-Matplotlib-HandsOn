@@ -71,10 +71,10 @@ def test_generate_plot_with_style1():
         species_index2 = [0.9, 1.9, 2.9]
         species_index3 = [1.1, 2.1, 3.1]
         species_index4 = [1.3, 2.3, 3.3]
-        ax.bar(species_index1,sepal_len, width='0.2',label='Sepal Length')
-        ax.bar(species_index2,sepal_wd, width='0.2', label='Sepal Width')
-        ax.bar(species_index3,petal_len, width='0.2', label='Petal Length')
-        ax.bar(species_index4,petal_wd, width='0.2', label='Petal Width')
+        ax.bar(species_index1,sepal_len, width=0.2,label='Sepal Length')
+        ax.bar(species_index2,sepal_wd, width=0.2, label='Sepal Width')
+        ax.bar(species_index3,petal_len, width=0.2, label='Petal Length')
+        ax.bar(species_index4,petal_wd, width=0.2, label='Petal Width')
         plt.title('Mean Measurements of Iris Species')
         plt.xlabel('Species'); plt.ylabel('Iris Measurements (cm)')
         plt.xlim(0.5,3.7); plt.ylim(0,10)
@@ -100,10 +100,10 @@ def test_generate_plot_with_style2():
         species_index2 = [0.9, 1.9, 2.9]
         species_index3 = [1.1, 2.1, 3.1]
         species_index4 = [1.3, 2.3, 3.3]
-        ax.bar(species_index1,sepal_len, width='0.2',label='Sepal Length')
-        ax.bar(species_index2,sepal_wd, width='0.2', label='Sepal Width')
-        ax.bar(species_index3,petal_len, width='0.2', label='Petal Length')
-        ax.bar(species_index4,petal_wd, width='0.2', label='Petal Width')
+        ax.bar(species_index1,sepal_len, width=0.2,label='Sepal Length')
+        ax.bar(species_index2,sepal_wd, width=0.2, label='Sepal Width')
+        ax.bar(species_index3,petal_len, width=0.2, label='Petal Length')
+        ax.bar(species_index4,petal_wd, width=0.2, label='Petal Width')
         plt.title('Mean Measurements of Iris Species')
         plt.xlabel('Species'); plt.ylabel('Iris Measurements (cm)')
         plt.xlim(0.5,3.7); plt.ylim(0,10)
@@ -129,10 +129,10 @@ def test_generate_plot_with_style3():
         species_index2 = [0.9, 1.9, 2.9]
         species_index3 = [1.1, 2.1, 3.1]
         species_index4 = [1.3, 2.3, 3.3]
-        ax.bar(species_index1,sepal_len, width='0.2',label='Sepal Length')
-        ax.bar(species_index2,sepal_wd, width='0.2', label='Sepal Width')
-        ax.bar(species_index3,petal_len, width='0.2', label='Petal Length')
-        ax.bar(species_index4,petal_wd, width='0.2', label='Petal Width')
+        ax.bar(species_index1,sepal_len, width=0.2,label='Sepal Length')
+        ax.bar(species_index2,sepal_wd, width=0.2, label='Sepal Width')
+        ax.bar(species_index3,petal_len, width=0.2, label='Petal Length')
+        ax.bar(species_index4,petal_wd, width=0.2, label='Petal Width')
         plt.title('Mean Measurements of Iris Species')
         plt.xlabel('Species'); plt.ylabel('Iris Measurements (cm)')
         plt.xlim(0.5,3.7); plt.ylim(0,10)
