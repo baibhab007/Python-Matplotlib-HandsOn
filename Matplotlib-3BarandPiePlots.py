@@ -105,13 +105,13 @@ def test_barplot_of_iris_sepal_length():
     species = ['setosa', 'versicolor', 'viriginica']
     index = [0.2, 1.2, 2.2]
     sepal_len = [5.01, 5.94, 6.59]
-    ax.bar(index,sepal_len, color='red', width='0.5', edgecolor = 'black')
+    ax.bar(index,sepal_len, color='red', width=0.5, edgecolor = 'black')
     plt.title('Mean Sepal Length of Iris Species')
     plt.xlabel('Species'); plt.ylabel('Sepal Length (cm)')
     plt.xlim(0,3); plt.ylim(0,7)
     ax.set_xticks([0.45, 1.45, 2.45])
     ax.set_xticklabels(['setosa', 'versicolor', 'viriginica'])
-
+    plt.show()
 
 @image_comparison(baseline_images=['Iris_Measurements_BarPlot'],extensions=['png'])
 def test_barplot_of_iris_measurements():
@@ -128,17 +128,17 @@ def test_barplot_of_iris_measurements():
     species_index2 = [0.9, 1.9, 2.9]
     species_index3 = [1.1, 2.1, 3.1]
     species_index4 = [1.3, 2.3, 3.3]
-    ax.bar(species_index1,sepal_len, color='c', width='0.2', edgecolor = 'black', label='Sepal Length')
-    ax.bar(species_index2,sepal_wd, color='m', width='0.2', edgecolor = 'black', label='Sepal Width')
-    ax.bar(species_index3,petal_len, color='y', width='0.2', edgecolor = 'black', label='Petal Length')
-    ax.bar(species_index4,petal_wd, color='orange', width='0.2', edgecolor = 'black', label='Petal Width')
+    ax.bar(species_index1,sepal_len, color='c', width=0.2, edgecolor = 'black', label='Sepal Length')
+    ax.bar(species_index2,sepal_wd, color='m', width=0.2, edgecolor = 'black', label='Sepal Width')
+    ax.bar(species_index3,petal_len, color='y', width=0.2, edgecolor = 'black', label='Petal Length')
+    ax.bar(species_index4,petal_wd, color='orange', width=0.2, edgecolor = 'black', label='Petal Width')
     plt.title('Mean Measurements of Iris Species')
     plt.xlabel('Species'); plt.ylabel('Iris Measurements (cm)')
     plt.xlim(0.5,3.7); plt.ylim(0,10)
     ax.set_xticks([1.1, 2.1, 3.1])
     ax.set_xticklabels(['setosa', 'versicolor', 'viriginica'])
     ax.legend()
-
+    plt.show()
 
 @image_comparison(baseline_images=['Iris_Petal_Length_BarPlot'],extensions=['png'])
 def test_hbarplot_of_iris_petal_length():
@@ -149,12 +149,13 @@ def test_hbarplot_of_iris_petal_length():
     species = ['setosa', 'versicolor', 'viriginica']
     index = [0.2, 1.2, 2.2]
     petal_len = [1.46, 4.26, 5.55]
-    ax.barh(index,petal_len, color='c', height='0.5', edgecolor = 'black')
+    ax.barh(index,petal_len, color='c', height=0.5, edgecolor = 'black')
     plt.title('Mean Petal Length of Iris Species')
     plt.xlabel('Petal Length (cm)'); plt.ylabel('Species')
     ax.set_yticks([0.45, 1.45, 2.45])
     ax.set_yticklabels(['setosa', 'versicolor', 'viriginica'])
-
+    plt.show()
+    
 ####
 Creating the Plot
 After completing function definitions in test_plots.py, click cd ~/ && python3 -m pytest ~/Matsession/tests/test_plots.py.
