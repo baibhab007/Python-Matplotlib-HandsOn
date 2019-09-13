@@ -142,10 +142,10 @@ def test_generate_figure2():
     axes3.scatter(x,y, s = 80, c = z , marker = 'o')
     axes3.set_xticks([0.0, 0.4, 0.8, 1.2])
     axes3.set_yticks([-0.2, 0.2, 0.6, 1.0])
-    axes3 = plt.subplot(2,2,3, title = 'Scatter plot with Diamond Markers')
-    axes3.scatter(x,y, s = 80, c = z , marker = 'd')
-    axes3.set_xticks([0.0, 0.4, 0.8, 1.2])
-    axes3.set_yticks([-0.2, 0.2, 0.6, 1.0])
+    axes4 = plt.subplot(2,2,4, title = 'Scatter plot with Diamond Markers')
+    axes4.scatter(x,y, s = 80, c = z , marker = 'd')
+    axes4.set_xticks([0.0, 0.4, 0.8, 1.2])
+    axes4.set_yticks([-0.2, 0.2, 0.6, 1.0])
     plt.tight_layout()
     plt.show()
 
@@ -159,11 +159,15 @@ def test_generate_figure3():
     y3 = x**3
     fig = plt.figure(figsize=(8,6))
     g = gridspec.GridSpec(2,2)
-    axes1 = plt.subplot(g[:,1], title = 'y = x')
+    axes1 = plt.subplot(g[0,:-1], title = 'y = x')
     axes1.plot(x, y1)
-    axes2 = plt.subplot(g[:,1], title = 'y = x**2')
+    plt.show()
+    axes2 = plt.subplot(g[1,:-1], title = 'y = x**2')
     axes2.plot(x, y2)
-    axes3 = plt.subplot(g[:2], title = 'y = x**3')
+    plt.show()
+    axes3 = plt.subplot(g[:,1], title = 'y = x**3')
     axes3.plot(x, y3)
     plt.tight_layout()
     plt.show()
+    
+
